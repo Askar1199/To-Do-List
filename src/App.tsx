@@ -22,7 +22,7 @@ function App() {
     }
   }
 
-  // console.log(todo)
+  console.log("hi")
   return (
     <>
       <div className="container">
