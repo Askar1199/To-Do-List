@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { todoval } from '../todovalue'
-import { RiDeleteBin6Line } from "react-icons/Ri";
-import { RiEdit2Line } from "react-icons/Ri";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { RiEdit2Line } from "react-icons/ri";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import "./styleInput.css"
 
