@@ -1,104 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-.field{
-    width: 90%;
-    /* border: 1px solid blue; */
-    display: flex;
-    position: relative;
-    align-items: center;
+.field {
+  width: 90%;
+  /* border: 1px solid blue; */
+  display: flex;
+  position: relative;
+  align-items: center;
 }
-.field .textInput{
-    width: 100%;
-    border: none;
-    padding: 20px 30px;
-    border-radius: 50px;
-    font-size: 22px;
-    font-family: 'Roboto Mono', monospace;
-    /* box-shadow:  0 0 5px 5px #435334; */
-    transition: 0.3s ;
+.field .textInput {
+  width: 100%;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-family: "Roboto Mono", monospace;
+  /* box-shadow:  0 0 5px 5px #435334; */
+  transition: 0.3s;
 }
-.textInput:focus{
-    outline: none;
-    box-shadow: 0 0 10px 10000px rgba(24, 23, 23, 0.452);
+.textInput:focus {
+  outline: none;
+  box-shadow: 0 0 10px 10000px rgba(24, 23, 23, 0.452);
 }
-.field .btnS{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
-    border: none;
-    position: absolute;
-    right: 0;
-    margin: 15px;
-    background-color: #9EB384;
-    color: #FAF1E4;
-    box-shadow: 0 0 5px rgb(32, 32, 32);
-    transition: 0.3s;
-    text-transform: uppercase;
+.field .btnS {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 15px;
+  background-color: #9eb384;
+  color: #faf1e4;
+  box-shadow: 0 0 5px rgb(32, 32, 32);
+  transition: 0.3s;
+  text-transform: uppercase;
 }
-.btnS:hover{
-    background-color: #435334;
+.btnS:hover {
+  background-color: #435334;
 }
-.btnS:active{
-    transform: scale(0.8);
+.btnS:active {
+  transform: scale(0.8);
 }
 
 /*   for inputfield tsx */
-.divlist{
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.divlist {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /*   for singleton tsx  */
-.singleton__form{
-    display: flex;
-    width: 29.5%;
-    /* border: 1px solid gold; */
-    border-radius: 8px;
-    color: #FAF1E4;
-    padding: 20px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    background-image: url(../../images/wepik-export-20231010150410gmnv.jpeg);
-    align-items: center;
-    background-size: fill;
+.singleton__form {
+  display: flex;
+  width: 29.5%;
+  /* border: 1px solid gold; */
+  border-radius: 8px;
+  color: #faf1e4;
+  padding: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  background-image: url(../../images/wepik-export-20231010150410gmnv.jpeg);
+  align-items: center;
+  background-size: fill;
 }
-.dataState{
-    flex: 1;
-    border: none;
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
-    padding: 5px;
+.dataState {
+  flex: 1;
+  border: none;
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  padding: 5px;
 }
-.icons{
-    margin-left: 10px;
-    font-size: 20px;
-    cursor: pointer;
+.icons {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
 }
-.done{
-    color:#97ff18;
+.done {
+  color: #97ff18;
 }
-.editInput:focus{
-    outline: none;
+.editInput:focus {
+  outline: none;
 }
-
 
 /*   responsive   */
-@media (max-width : 1200px){
-    .singleton__form{
-        width: 40%;
-    }
+@media (max-width: 1200px) {
+  .singleton__form {
+    width: 40%;
+  }
 }
 
-@media ( max-width : 767px){
-    .field{
-        width: 95%;
-    }
-    .singleton__form{
-        width: 100%;
-    }
+@media (max-width: 767px) {
+  .field {
+    width: 95%;
+  }
+  .singleton__form {
+    width: 100%;
+  }
+ 
+}
+@media (max-width: 998px) {
+  .btnS {
+    font-size: 14px !important;
+  }
+  .btnS:hover {
+    background-color: #9eb384;
+  }
+  .btnS:active {
+    background-color: #435334;
+  }
 }

@@ -28,9 +28,7 @@ function App() {
       <div className="container">
         <h2 className="heading">To Do List</h2>
          <Inputfield value={value} setvalue={setvalue} submit={submit}/>
-         {/* {todo.map((i)=>(
-          <li>{i.todo}</li>
-         ))} */}
+         
          <Listfield state={todo} newState={setTodo} />
       </div>
     </>
